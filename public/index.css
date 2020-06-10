@@ -1,0 +1,42 @@
+@font-face{
+    font-family: Quicksand;
+    src: url(Quicksand.ttf);
+}
+
+@font-face{
+    font-family: FiraCode;
+    src: url('FiraCode.ttf');
+}
+
+body{
+    margin: 0;
+    background-color: #06162f;
+}
+
+*{
+    font-family: Quicksand;
+    color: #d0baba;
+}
+
+.section-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.headline{
+    color: #5984c8;
+    border-bottom: 2px solid #5984c8;
+}
+
+.box{
+    width: 600px;
+    padding: 1.5em;
+}
+
+@media (max-width: 657px){
+    .box{
+        width: 100%;
+    }
+}

@@ -1,0 +1,10 @@
+button{
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    font-family: FiraCode;
+    padding: 0.5em;
+    border: 1px solid #d0baba;
+    border-radius: 5px;
+}

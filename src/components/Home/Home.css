@@ -1,0 +1,19 @@
+.firacode{
+    font-family: FiraCode;
+    color: #5984c8;
+    margin: 0;
+}
+
+.headline-primary{
+    margin: 0;
+    color: #d9e8ff;
+}
+
+.headline-secondary{
+    color: #9cafcc;
+    margin-bottom: 0;
+}
+
+.description{
+    margin: 0;
+}

@@ -1,10 +1,8 @@
-button{
-    background: none;
-    cursor: pointer;
-    border: none;
+.bubble{
     font-size: 0.8em;
     font-family: FiraCode;
     padding: 0.5em;
     border: 1px solid #d0baba;
     border-radius: 5px;
+    margin: 0.2em;
 }

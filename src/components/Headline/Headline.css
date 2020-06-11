@@ -1,0 +1,21 @@
+.headline{
+    display: flex;
+    align-items: center;
+}
+
+.headline .text{
+    color: #9cafcc;
+}
+
+.headline .text .number{
+    font-family: FiraCode;
+    color: #d0baba;
+    font-weight: normal;
+}
+
+.horizontal-line{
+    margin-left: 1em;
+    height: 3px;
+    flex: 1;
+    background-color: #051d42;
+}

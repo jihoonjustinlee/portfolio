@@ -6,6 +6,8 @@ nav{
     left: 0;
     display: flex;
     padding: 1em;
+    font-size: 0.8em;
+    z-index: 1;
 }
 
 ul{
@@ -22,6 +24,7 @@ li{
     font-family: FiraCode;
     padding: 0.5em;
     cursor: pointer;
+    margin: 0 1em;
 }
 
 .right{

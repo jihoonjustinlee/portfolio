@@ -1,0 +1,43 @@
+.about-me{
+    display: flex;
+}
+
+.about-me .description{
+    width: calc(100% - 200px);
+    margin-right: 1em;
+}
+
+.about-me .description .highlight{
+    color: white;
+}
+
+.image-container{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+.image-container .underlying-background{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #5984c8;
+    z-index: -1;
+}
+
+.description .tech-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.description .tech-grid .arrow{
+    margin-right: 1em;
+}
+
+.description .tech-grid .arrow path{
+    color: #5984c8;
+}

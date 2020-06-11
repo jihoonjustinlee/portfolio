@@ -22,12 +22,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.headline{
-    color: #5984c8;
-    border-bottom: 2px solid #5984c8;
+    min-height: 100vh;
 }
 
 .box{

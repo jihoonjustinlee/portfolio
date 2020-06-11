@@ -1,0 +1,37 @@
+.workplace{
+    margin-left: 2em;
+}
+
+.workplace .title{
+    margin-top: 5px;
+}
+
+.workplace .date{
+    color: #605555;
+    font-size: 0.8em;
+}
+
+.duty-container{
+    margin-top: 2em;
+    display: grid;
+    grid-gap: 5px;
+}
+
+.duty-container .duty{
+    display: flex;
+}
+
+.duty-container .duty .arrow{
+    margin-right: 1em;
+    margin-top: 2px;
+}
+
+.duty-container .duty .arrow path{
+    color: #5984c8;
+}
+
+.bubbles-container{
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}

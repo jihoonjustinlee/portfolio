@@ -1,0 +1,20 @@
+.work-container{
+    display: flex;
+}
+
+.place-work-choose{
+    display: grid;
+    grid-gap: 1em;
+    height: 100px;
+}
+
+#work{
+    position: relative;
+}
+
+#work .box.fixed{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}

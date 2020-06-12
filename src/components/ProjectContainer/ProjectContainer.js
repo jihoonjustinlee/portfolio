@@ -14,7 +14,7 @@ function ProjectContainer(props){
     return(
         <div className={`project-container${props.reverse ? ' reverse' : ''}`}>
             <div className="left">
-                <img src={props.image}/>
+                <img src={props.image} alt="test"/>
                 <FontAwesomeIcon icon={faGithub} className="github"/>
             </div>
             <div className="right">

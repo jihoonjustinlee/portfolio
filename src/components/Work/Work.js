@@ -50,6 +50,19 @@ class Work extends React.Component{
                     ]
                 },
                 {
+                    'shortened': 'CAF',
+                    'title': 'Combat Engineer',
+                    'place': 'Canadian Armed Forces',
+                    'date': 'Feb 2017 - May 2019',
+                    'duties': [
+                        'asdf',
+                        'asdf',
+                        'asdf',
+                        'asdf'
+                    ],
+                    'tools': []
+                },
+                {
                     'shortened':'NRCan',
                     'title': 'Junior Developer (Co-op)',
                     'place': 'Natural Resources Canada',
@@ -66,10 +79,32 @@ class Work extends React.Component{
                     ]
                 }
             ],
-            place_work_idx: 0
+            place_work_idx: 0,
+            box_height: '',
+            box_margin_top: ''
         }
     }
     
+    updateBoxMargin(){
+        const boxHeight = document.querySelector('#work .box').clientHeight
+        const marginTop = `calc(50vh - ${boxHeight/2}px)`
+        this.setState({
+            box_height: boxHeight,
+            box_margin_top: marginTop
+        })
+    }
+
+    componentDidMount(){
+        const boxHeight = document.querySelector('#work .box').clientHeight
+        const marginTop = `calc(50vh - ${boxHeight/2}px)`
+        console.log(boxHeight)
+        this.setState({
+            box_height: boxHeight,
+            box_margin_top: marginTop
+        })
+        window.addEventListener('resize', ()=>this.updateBoxMargin())
+    }
+
     showWorkPlace(idx){
         if (this.state.place_work_idx !== idx){
             this.setState({
@@ -93,7 +128,7 @@ class Work extends React.Component{
 
         return(
             <div id="work" className="section-container">
-                <div className="box fixed">
+                <div className="box" style={{'marginTop': this.state.box_margin_top}}>
                     <Headline number="02. " title="Where I've Worked"></Headline>
                     <div className="work-container">
                         <div className="place-work-choose">

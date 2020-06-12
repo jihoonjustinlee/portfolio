@@ -4,6 +4,7 @@ import About from '../About/About'
 import Work from '../Work/Work'
 import Project from '../Project/Project'
 import Contact from '../Contact/Contact'
+import SocialContainer from '../SocialContainer/SocialContainer'
 import './Body.css'
 
 function Body(){
@@ -14,6 +15,7 @@ function Body(){
             <Work></Work>
             <Project></Project>
             <Contact></Contact>
+            <SocialContainer></SocialContainer>
         </div>
     )
 }

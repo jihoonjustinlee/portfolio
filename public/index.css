@@ -26,11 +26,12 @@ body{
 }
 
 .box{
-    width: 600px;
+    width: 800px;
     padding: 1.5em;
+    box-sizing: border-box;
 }
 
-@media (max-width: 657px){
+@media (max-width: 800px){
     .box{
         width: 100%;
     }

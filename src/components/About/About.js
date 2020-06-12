@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import Headline from '../Headline/Headline'
-import self_portrait from './300.png'
+import self_portrait from './self_portrait.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -30,9 +30,7 @@ function About(){
                             <div><FontAwesomeIcon icon={faAngleRight} className="arrow"/>SQLite</div>
                         </div>
                     </div>
-                    <div className="image-container">
-                        <div className="underlying-background"></div>
-                    </div>
+                    <img className="portrait" src={self_portrait}/>
                 </div>
             </div>
         </div>

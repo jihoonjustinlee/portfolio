@@ -7,14 +7,14 @@ import Bubble from '../Bubble/Bubble'
 function Workplace(props){
     const duties = props.duties.map((duty, idx)=>{
         return (
-            <div className="duty">
+            <div className="duty" key={idx}>
                 <FontAwesomeIcon icon={faAngleRight} className="arrow"/>
                 {duty}
             </div>)
     })
 
     const bubbles = props.tools.map((tool, idx)=>{
-        return <Bubble text={tool}></Bubble>
+        return <Bubble key={idx} text={tool}></Bubble>
     })
 
     return(

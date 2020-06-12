@@ -9,12 +9,6 @@
 }
 
 #work{
-    position: relative;
+    align-items: flex-start;
 }
 
-#work .box.fixed{
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-}

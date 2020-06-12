@@ -11,7 +11,7 @@
     color: white;
 }
 
-.image-container{
+/* .image-container{
     position: relative;
     width: 200px;
     height: 200px;
@@ -26,6 +26,12 @@
     height: 100%;
     background-color: #5984c8;
     z-index: -1;
+} */
+
+.portrait{
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px #d9e8ff;
 }
 
 .description .tech-grid{

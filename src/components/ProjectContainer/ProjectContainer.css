@@ -1,0 +1,77 @@
+.project-container{
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.project-container.reverse{
+    flex-direction: row-reverse;
+}
+
+
+.project-container .right .header{
+    font-family: FiraCode;
+    font-size: 0.8em;
+}
+
+.project-container .left{
+    width: 60%;
+    position: relative;
+}
+
+.project-container .left .github{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.2em;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.project-container .left .github path{
+    color: black;
+}
+
+.project-container .left img{
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 1px #0000007a;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.project-container .left img:hover{
+    opacity: 1;
+}
+
+.project-container .right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 1em;
+}
+
+.project-container .right .right-first{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.project-container.reverse .right .right-first{
+    align-items: flex-start;
+}
+
+.project-container .right .project-name{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #9cafcc;
+}
+
+.project-container.reverse .right{
+    margin-left: 0;
+    margin-right: 1em;
+    align-items: flex-start;
+}
+

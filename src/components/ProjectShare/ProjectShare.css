@@ -1,0 +1,19 @@
+.project-share-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2em;
+}
+
+.share-icon{
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.share-icon path{
+    color: #9cafcc;
+    transition: all 0.2s ease;
+}
+
+.share-icon:hover > path{
+    color: #d9e8ff;
+}

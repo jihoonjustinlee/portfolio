@@ -27,6 +27,6 @@ li{
     margin: 0 1em;
 }
 
-.right{
+nav ul .right{
     display: flex;
 }

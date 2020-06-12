@@ -1,0 +1,25 @@
+.social-container{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.social-container svg{
+    cursor: pointer;
+    padding: 0.2em;
+    margin: 0.2em;
+    font-size: 20px;
+}
+
+.social-container svg:hover > path{
+    color: #d9e8ff;
+}
+
+.social-container svg path{
+    color: #9cafcc;
+    transition: all 0.2s ease;
+}

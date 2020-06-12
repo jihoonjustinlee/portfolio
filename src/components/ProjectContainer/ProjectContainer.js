@@ -6,6 +6,11 @@ import ProjectDescCard from '../ProjectDescCard/ProjectDescCard'
 import ProjectShare from '../ProjectShare/ProjectShare'
 import Bubble from '../Bubble/Bubble'
 
+
+function onClickHandler(url){
+    window.open(url)
+}
+
 function ProjectContainer(props){
     const bubbles = props.tools.map((tool, idx)=>{
         return <Bubble key={idx} text={tool}></Bubble>
@@ -14,7 +19,8 @@ function ProjectContainer(props){
     return(
         <div className={`project-container${props.reverse ? ' reverse' : ''}`}>
             <div className="left">
-                <img src={props.image} alt="test"/>
+                <img src={props.image} alt={props.alt} onClick={()=>onClickHandler(props.github_url)}/>
+                <div className="tape-triangle"></div>
                 <FontAwesomeIcon icon={faGithub} className="github"/>
             </div>
             <div className="right">
@@ -26,7 +32,7 @@ function ProjectContainer(props){
                 <div className="bubbles-container">
                     { bubbles }
                 </div>
-                <ProjectShare></ProjectShare>
+                <ProjectShare github_url={props.github_url} external_url={props.external_url}></ProjectShare>
             </div>
         </div>
     )

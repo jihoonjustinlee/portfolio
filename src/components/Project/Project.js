@@ -15,7 +15,34 @@ class Project extends React.Component{
                     'name':'Sorting Visualizer',
                     'reverse': false,
                     'image': sorting_visualizer,
-                    'desc': 'Cupidatat eiusmod adipisicing velit nisi magna labore sunt laboris labore velit.',
+                    'alt':'preview image of sorting visualizer',
+                    'desc': 'This project is my attempt to explain (visually) how each sorting algorithm works to beginners. The project currently can visualize Bubblesort and Mergesort.',
+                    'github_url': 'https://github.com/jihoonjustinlee/SortingVisualizer',
+                    'external_url': 'https://jihoonjustinlee.github.io/SortingVisualizer/',
+                    'tools': [
+                        'React.js',
+                        'Node.js'
+                    ]
+                },
+                {
+                    'name':'Bubble Split',
+                    'reverse': true,
+                    'image': bubble_split,
+                    'alt':'preview image of bubble split game',
+                    'desc': 'A retro game I wrote in Python using PyGame.',
+                    'github_url': 'https://github.com/jihoonjustinlee/BubbleSplit',
+                    'external_url': '',
+                    'tools': [
+                        'Python',
+                        'PyGame'
+                    ]
+                },
+                {
+                    'name':'Portfolio Website',
+                    'reverse': false,
+                    'image': bubble_split,
+                    'alt':"preview image of justin's portfolio website",
+                    'desc': 'Sint tempor aliquip exercitation esse.',
                     'github_url': '',
                     'external_url': '',
                     'tools': [
@@ -27,31 +54,8 @@ class Project extends React.Component{
                     'name':'Docky',
                     'reverse': true,
                     'image': docky,
+                    'alt':'preview image of docky',
                     'desc': 'Veniam minim est enim qui laboris voluptate et anim.',
-                    'github_url': '',
-                    'external_url': '',
-                    'tools': [
-                        'React.js',
-                        'Node.js'
-                    ]
-                },
-                {
-                    'name':'Bubble Split',
-                    'reverse': false,
-                    'image': bubble_split,
-                    'desc': 'Esse eiusmod laboris nulla et excepteur laborum irure nisi magna aliqua.',
-                    'github_url': '',
-                    'external_url': '',
-                    'tools': [
-                        'React.js',
-                        'Node.js'
-                    ]
-                },
-                {
-                    'name':'Portfolio Website',
-                    'reverse': true,
-                    'image': bubble_split,
-                    'desc': 'Sint tempor aliquip exercitation esse.',
                     'github_url': '',
                     'external_url': '',
                     'tools': [
@@ -74,6 +78,7 @@ class Project extends React.Component{
                     external_url={project.external_url}
                     tools={project.tools}
                     desc={project.desc}
+                    alt={project.alt}
                     ></ProjectContainer>
         })
 

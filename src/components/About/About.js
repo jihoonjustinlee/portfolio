@@ -30,7 +30,7 @@ function About(){
                             <div><FontAwesomeIcon icon={faAngleRight} className="arrow"/>SQLite</div>
                         </div>
                     </div>
-                    <img className="portrait" src={self_portrait}/>
+                    <img className="portrait" src={self_portrait} alt="portrait of justin"/>
                 </div>
             </div>
         </div>

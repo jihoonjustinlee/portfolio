@@ -22,13 +22,12 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin: 0.2em;
-    font-size: 20px;
+    margin: 2px;
     pointer-events: none;
 }
 
 .project-container .left .github path{
-    color: black;
+    color: #d0baba;
 }
 
 .project-container .left img{
@@ -75,3 +74,14 @@
     align-items: flex-start;
 }
 
+.project-container .left .tape-triangle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 38px 38px 0;
+    border-color: transparent #2d2d2d transparent transparent;
+    pointer-events: none;
+}

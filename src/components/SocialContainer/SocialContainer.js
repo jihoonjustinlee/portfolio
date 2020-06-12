@@ -1,7 +1,7 @@
 import React from 'react'
 import './SocialContainer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 function onClickHandler(url){
     window.open(url);

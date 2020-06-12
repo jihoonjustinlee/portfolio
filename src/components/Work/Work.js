@@ -97,7 +97,6 @@ class Work extends React.Component{
     componentDidMount(){
         const boxHeight = document.querySelector('#work .box').clientHeight
         const marginTop = `calc(50vh - ${boxHeight/2}px)`
-        console.log(boxHeight)
         this.setState({
             box_height: boxHeight,
             box_margin_top: marginTop

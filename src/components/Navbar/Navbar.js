@@ -17,7 +17,7 @@ function Navbar(props){
                 <div className="right">
                     <li onClick={() => scrollTo('about')}>01. About Me</li>
                     <li onClick={() => scrollTo('work')}>02. Experience</li>
-                    <li onClick={() => scrollTo('project')}>03. Projects</li>
+                    <li onClick={() => scrollTo('project')}>03. Project</li>
                     <li onClick={() => scrollTo('contact')}>04. Contact</li>
                     <Button text="Resume"></Button>
                 </div>

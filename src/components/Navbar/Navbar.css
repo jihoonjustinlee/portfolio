@@ -10,6 +10,12 @@ nav{
     z-index: 1;
 }
 
+.logo{
+    cursor: pointer;
+    width: 35px;
+    padding: 0.5em;
+}
+
 ul{
     width: 100%;
     list-style: none;

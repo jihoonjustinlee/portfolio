@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import Button from '../Button/Button'
+import logo from './logo.svg'
 
 function scrollTo(element){
     const e = document.getElementById(element)
@@ -12,7 +13,7 @@ function Navbar(props){
         <nav>
             <ul>
                 <div className="left">
-                    <li onClick={() => scrollTo('home')}>Justin Lee</li>
+                    <img src={logo} className="logo" onClick={() => scrollTo('home')}/>
                 </div>
                 <div className="right">
                     <li onClick={() => scrollTo('about')}>01. About Me</li>

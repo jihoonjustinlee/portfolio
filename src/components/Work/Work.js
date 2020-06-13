@@ -50,19 +50,6 @@ class Work extends React.Component{
                     ]
                 },
                 {
-                    'shortened': 'CAF',
-                    'title': 'Combat Engineer',
-                    'place': 'Canadian Armed Forces',
-                    'date': 'Feb 2017 - May 2019',
-                    'duties': [
-                        'asdf',
-                        'asdf',
-                        'asdf',
-                        'asdf'
-                    ],
-                    'tools': []
-                },
-                {
                     'shortened':'NRCan',
                     'title': 'Junior Developer (Co-op)',
                     'place': 'Natural Resources Canada',

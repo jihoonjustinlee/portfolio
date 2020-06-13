@@ -4,6 +4,7 @@ import ProjectContainer from '../ProjectContainer/ProjectContainer'
 import sorting_visualizer from './sorting_visualizer.png'
 import docky from './docky.png'
 import bubble_split from './bubble_split.png'
+import portfolio from './portfolio.png'
 import './Project.css'
 
 class Project extends React.Component{
@@ -40,11 +41,11 @@ class Project extends React.Component{
                 {
                     'name':'Portfolio Website',
                     'reverse': false,
-                    'image': bubble_split,
+                    'image': portfolio,
                     'alt':"preview image of justin's portfolio website",
-                    'desc': 'Sint tempor aliquip exercitation esse.',
-                    'github_url': '',
-                    'external_url': '',
+                    'desc': 'My personal portfolio website.',
+                    'github_url': 'https://github.com/jihoonjustinlee/Portfolio',
+                    'external_url': 'todo',
                     'tools': [
                         'React.js',
                         'Node.js'
@@ -55,11 +56,15 @@ class Project extends React.Component{
                     'reverse': true,
                     'image': docky,
                     'alt':'preview image of docky',
-                    'desc': 'Veniam minim est enim qui laboris voluptate et anim.',
-                    'github_url': '',
-                    'external_url': '',
+                    'desc': 'This project was done while working at University of Fredericton. I created two automation tools called Docky and SBRun which aims to speed up the courseware development. This website also contains useful documentations that are still used at UFred nowadays. Use Secret123 for the password.',
+                    'github_url': 'https://github.com/jihoonjustinlee/DockyFrontend',
+                    'external_url': 'https://ufred-dev.herokuapp.com/',
                     'tools': [
-                        'React.js',
+                        'Vue.js',
+                        'Express.js',
+                        'MongoDB',
+                        'Mongoose',
+                        'Mlab',
                         'Node.js'
                     ]
                 }

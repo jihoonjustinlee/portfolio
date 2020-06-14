@@ -13,6 +13,13 @@
     padding: 0.2em;
     margin: 0.2em;
     font-size: 20px;
+    position: relative;
+    top: 0;
+    transition: top 0.2s ease;
+}
+
+.social-container svg:hover{
+    top: -5px;
 }
 
 .social-container svg:hover > path{
@@ -22,4 +29,10 @@
 .social-container svg path{
     color: #9cafcc;
     transition: all 0.2s ease;
+}
+
+@media (max-width: 883px){
+    .social-container{
+        display: none;
+    }
 }

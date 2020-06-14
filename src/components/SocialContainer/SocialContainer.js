@@ -1,5 +1,6 @@
 import React from 'react'
 import './SocialContainer.css'
+import Email from '../Email/Email'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons'
 

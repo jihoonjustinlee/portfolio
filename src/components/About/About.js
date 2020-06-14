@@ -5,6 +5,10 @@ import self_portrait from './self_portrait.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
+function onClickHandler(url){
+    window.open(url)
+}
+
 function About(){
     return(
         <div id="about" className="section-container">
@@ -30,7 +34,10 @@ function About(){
                             <div><FontAwesomeIcon icon={faAngleRight} className="arrow"/>SQLite</div>
                         </div>
                     </div>
-                    <img className="portrait" src={self_portrait} alt="portrait of justin"/>
+                    <div className="portrait" onClick={()=>onClickHandler('https://github.com/jihoonjustinlee')}>
+                        <img src={self_portrait} alt="portrait of justin"/>
+                    </div>
+                    {/* <img className="portrait" src={self_portrait} alt="portrait of justin" onClick={()=>onClickHandler('https://github.com/jihoonjustinlee')}/> */}
                 </div>
             </div>
         </div>

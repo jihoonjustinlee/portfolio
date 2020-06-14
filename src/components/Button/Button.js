@@ -3,7 +3,7 @@ import './Button.css'
 
 function Button(props){
     return(
-        <button className="button">{props.text}</button>
+        <a className="button" href={props.a_href} target="_blank">{props.text}</a>
     )
 }
 

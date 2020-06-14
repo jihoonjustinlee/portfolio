@@ -5,6 +5,8 @@ import Work from '../Work/Work'
 import Project from '../Project/Project'
 import Contact from '../Contact/Contact'
 import SocialContainer from '../SocialContainer/SocialContainer'
+import Footer from '../Footer/Footer'
+import Email from '../Email/Email'
 import './Body.css'
 
 function Body(){
@@ -16,6 +18,8 @@ function Body(){
             <Project></Project>
             <Contact></Contact>
             <SocialContainer></SocialContainer>
+            <Email></Email>
+            <Footer></Footer>
         </div>
     )
 }

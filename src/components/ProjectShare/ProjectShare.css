@@ -7,6 +7,13 @@
 .share-icon{
     padding: 0.5em;
     cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: top 0.2s ease;
+}
+
+.share-icon:hover{
+    top: -5px;
 }
 
 .share-icon path{

@@ -1,6 +1,6 @@
 .project-container{
     display: flex;
-    margin-bottom: 3em;
+    margin-bottom: 6em;
 }
 
 .project-container.reverse{
@@ -84,4 +84,23 @@
     border-width: 0 38px 38px 0;
     border-color: transparent #2d2d2d transparent transparent;
     pointer-events: none;
+}
+
+@media (max-width: 785px){
+    .project-container{
+        flex-direction: column-reverse;
+    }
+
+    .project-container .right{
+        width: 100%;
+        margin-left: initial;
+    }
+
+    .project-container .left{
+        width: 100%;
+    }
+    
+    .project-container.reverse{
+        flex-direction: column-reverse;
+    }
 }

@@ -12,3 +12,8 @@
     align-items: flex-start;
 }
 
+@media (max-width: 650px){
+    .work-container{
+        flex-direction: column;
+    }
+}

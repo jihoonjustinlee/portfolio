@@ -1,0 +1,21 @@
+.fixed-email{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    writing-mode: sideways-lr;
+    font-family: FiraCode;
+    padding: 1.4em;
+    font-size: 0.8em;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.fixed-email:hover{
+    color: #d9e8ff;
+}
+
+@media (max-width: 883px){
+    .fixed-email{
+        display: none;
+    }
+}

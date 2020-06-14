@@ -19,3 +19,9 @@
     flex: 1;
     background-color: #051d42;
 }
+
+@media (max-width: 552px){
+    .headline .text{
+        font-size: 24px;
+    }
+}

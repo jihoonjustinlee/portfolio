@@ -27,3 +27,32 @@
 .work-choose .text.active{
     color: #d0baba;
 }
+
+@media (max-width: 650px){
+    .place-work-choose{
+        grid-gap: initial;
+        height: initial;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .work-choose{
+        flex-direction: column-reverse;
+        height: initial;
+    }
+
+    .left-border-highlight{
+        width: 0;
+        height: 2px;
+        margin-left: initial;
+    }
+
+    .left-border-highlight.active{
+        height: 2px;
+        width: 100%;
+    }
+
+    .work-choose .text{
+        justify-content: center;
+        padding: 1em;
+    }
+}

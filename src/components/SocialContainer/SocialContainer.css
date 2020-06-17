@@ -5,7 +5,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
+    margin-left: 1em;
+}
+
+.social-container .vertical-line{
+    width: 1px;
+    height: 100px;
+    background-color: #9cafcc;
+    opacity: 0;
+    position: relative;
+    top: 5px;
+    transition: all 0.2s ease;
+    margin-top: 0.4em;
+}
+
+.social-container .vertical-line.enter-done{
+    opacity: 1;
+    top: 0;
 }
 
 .social-container .social-container-icon{

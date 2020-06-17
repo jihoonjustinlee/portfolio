@@ -13,7 +13,8 @@ class Navbar extends React.Component{
             isMobile: false,
             mobileNavShown: false,
             lastScrollPos: 0,
-            mounted: false
+            mounted: false,
+            testing: false
         }
     }
 
@@ -56,6 +57,15 @@ class Navbar extends React.Component{
                 isMobile: false,
                 mobileNavShown: false
             })
+            if (this.state.mounted){
+                const navOptions = document.getElementsByClassName('navbar-desktop-option')
+                const navButton = document.querySelector('.navbar-desktop .button')
+                navButton.classList.add('enter-done')
+                for (let i=0; i<navOptions.length; i++){
+                    navOptions[i].classList.add('enter-done')
+                }
+            }
+            
         } else{
             this.setState({
                 isMobile: true
@@ -78,7 +88,8 @@ class Navbar extends React.Component{
 
     componentDidMount(){
         this.setState({
-            mounted: true
+            mounted: true,
+            testing: true
         })
         this.toggleNavType()
         window.addEventListener('resize', () => this.toggleNavType())
@@ -116,9 +127,7 @@ class Navbar extends React.Component{
                         </div>}
                     </div>
                 </ul>
-
-            
-                { this.state.isMobile && this.state.mobileNavShown ? 
+                <CSSTransition in={this.state.isMobile && this.state.mobileNavShown} unmountOnExit timeout={0}>
                     <div className="navbar-mobile">
                         <div className="navbar-mobile-container">
                             <div className="navbar-mobile-container-options">
@@ -130,7 +139,8 @@ class Navbar extends React.Component{
                             </div>
                             <Footer></Footer>
                         </div>
-                    </div> : null}
+                    </div>
+                </CSSTransition>
             </nav>
         )
     }

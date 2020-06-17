@@ -50,6 +50,12 @@ nav{
     background-color: #0000003d;
     display: flex;
     justify-content: flex-end;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.navbar-mobile.enter-done{
+    opacity: 1;
 }
 
 .navbar-mobile-container{

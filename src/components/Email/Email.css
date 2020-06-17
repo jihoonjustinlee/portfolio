@@ -1,27 +1,57 @@
-.fixed-email{
-    opacity: 0;
+.fixed-email-container{
     position: fixed;
-    bottom: -10px;
-    right: 0;
-    writing-mode: sideways-lr;
+    right: 0px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.9em;
+}
+
+.fixed-email-container .vertical-line{
+    width: 1px;
+    height: 100px;
+    background-color: #9cafcc;
+    opacity: 0;  
+    position: relative;
+    top: 5px;
+    transition: all 0.2s ease;
+    margin-top: 1em;
+}
+
+.fixed-email-container .vertical-line.enter-done{
+    top: 0;
+    opacity: 1;
+}
+
+.fixed-email-container .fixed-email{
+    writing-mode: vertical-lr;
     font-family: FiraCode;
-    padding: 1.4em;
     font-size: 0.8em;
     text-decoration: none;
     transition: all 0.2s ease;
+    position: relative;
+    top: 5px;
+    color: #9cafcc;
+    opacity: 0;
 }
 
-.fixed-email.enter-done{
+.fixed-email-container .fixed-email.enter-done{
     opacity: 1;
-    bottom: 0;
+    top: 0;
 }
 
-.fixed-email:hover{
+.fixed-email-container .fixed-email:hover{
     color: #d9e8ff;
+    top: -5px;
 }
+
+/* .fixed-email:hover{
+    color: #d9e8ff;
+} */
 
 @media (max-width: 883px){
-    .fixed-email{
+    .fixed-email-container{
         display: none;
     }
 }

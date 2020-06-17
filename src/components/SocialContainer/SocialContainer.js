@@ -34,23 +34,12 @@ class SocialContainer extends React.Component{
                 <CSSTransition className="social-container-icon" timeout={1000} in={this.state.mounted}>
                     <FontAwesomeIcon icon={faFacebook} onClick={()=>this.onClickHandler('https://www.facebook.com/justin.lee.754')}/>
                 </CSSTransition>
+                <CSSTransition timeout={900} in={this.state.mounted}>
+                    <div className="vertical-line"></div>
+                </CSSTransition>    
             </div>
         )
     }
 }
-
-// function onClickHandler(url){
-//     window.open(url);
-// }
-
-// function SocialContainer(){
-//     return(
-//         <div className="social-container">
-//             <FontAwesomeIcon icon={faGithub} onClick={()=>onClickHandler('https://github.com/jihoonjustinlee')}/>
-//             <FontAwesomeIcon icon={faLinkedin} onClick={()=>onClickHandler('https://www.linkedin.com/in/jihoonjustinlee/')}/>
-//             <FontAwesomeIcon icon={faFacebook} onClick={()=>onClickHandler('https://www.facebook.com/justin.lee.754')}/>
-//         </div>
-//     )
-// }
 
 export default SocialContainer

@@ -18,9 +18,14 @@ class Email extends React.Component{
 
     render(){
         return(
-            <CSSTransition timeout={1300} in={this.state.mounted}>
-                <a href="mailto:jihoonjustinlee1@gmail.com" className="fixed-email">jihoonjustinlee1@gmail.com</a>
-            </CSSTransition>
+            <div className="fixed-email-container">
+                <CSSTransition timeout={1300} in={this.state.mounted}>
+                    <a href="mailto:jihoonjustinlee1@gmail.com" className="fixed-email">jihoonjustinlee1@gmail.com</a>
+                </CSSTransition>
+                <CSSTransition timeout={1200} in={this.state.mounted}>
+                    <div className="vertical-line"></div>
+                </CSSTransition>
+            </div>
         )
     }
 }

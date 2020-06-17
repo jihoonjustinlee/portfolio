@@ -8,6 +8,17 @@
     padding: 1em;
 }
 
+.social-container .social-container-icon{
+    opacity: 0;
+    top: 5px;
+    transition: all 0.2s ease;
+}
+
+.social-container .social-container-icon.enter-done{
+    opacity: 1;
+    top: 0;
+}
+
 .social-container svg{
     cursor: pointer;
     padding: 0.2em;
@@ -18,11 +29,11 @@
     transition: top 0.2s ease;
 }
 
-.social-container svg:hover{
+.social-container .social-container-icon:hover{
     top: -5px;
 }
 
-.social-container svg:hover > path{
+.social-container .social-container-icon:hover > path{
     color: #d9e8ff;
 }
 

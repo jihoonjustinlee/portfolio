@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-import NavMobile from './components/NavMobile/NavMobile'
 import Body from './components/Body/Body'
 
 

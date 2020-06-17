@@ -17,6 +17,30 @@ nav{
     display: flex;
 }
 
+.navbar-desktop-option{
+    opacity: 0;
+    position: relative;
+    top: -10px;
+    transition: all 0.2s ease;
+}
+
+.navbar-desktop-option.enter-done{
+    opacity: 1;
+    top: 0;
+}
+
+.navbar-desktop .button{
+    opacity: 0;
+    position: relative;
+    top: -10px;
+    transition: all 0.2s ease;
+}
+
+.navbar-desktop .button.enter-done{
+    opacity: 1;
+    top: 0;
+}
+
 .navbar-mobile{
     position: fixed;
     right: 0;
@@ -32,24 +56,34 @@ nav{
     background-color: #06162f;
     width: 70vw;
     box-shadow: -5px 0px 10px 1px #0000007a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar-mobile-container .navbar-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    font-size: 0.8em;
+    font-family: FiraCode;
 }
 
 .navbar-mobile-toggle-button{
     z-index: 1;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0.5em;
-    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
+    position: relative;
 }
 
 .navbar-mobile-toggle-button .toggle-button-bar{
-    width: 100%;
+    width: 25px;
     height: 3px;
     background-color: #d9e8ff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .navbar-mobile-container-options{
@@ -64,21 +98,45 @@ nav{
     cursor: pointer;
 }
 
-/* .navbar-mobile-toggle-button .toggle-button-bar.top{
-    
+.navbar-mobile-toggle-button .toggle-button-bar.top{
+    position: absolute;
+    top: 2px;
+    left: 0;
 }
 
-.navbar-mobile-toggle-button .toggle-button-bar.middle-one{
-    
-}
-
-.navbar-mobile-toggle-button .toggle-button-bar.middle-one{
-    
+.navbar-mobile-toggle-button .toggle-button-bar.middle{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 .navbar-mobile-toggle-button .toggle-button-bar.bottom{
-    
-} */
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+}
+
+.navbar-mobile-toggle-button.opened .toggle-button-bar.top{
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.navbar-mobile-toggle-button.opened .toggle-button-bar.bottom{
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+.navbar-mobile-toggle-button.opened .toggle-button-bar.middle{
+    opacity: 0;
+}
+
+.navbar-mobile-container-options .button{
+    margin: 1em;
+    width: 50%;
+    text-align: center;
+    font-size: 1em;
+}
 
 
 
@@ -99,15 +157,17 @@ ul{
     justify-content: space-between;
 }
 
-li{
+
+.navbar-desktop-option{
     font-family: FiraCode;
     padding: 0.5em;
     cursor: pointer;
     margin: 0 1em;
 }
 
-li:hover{
+.navbar-desktop-option:hover{
     color: #d9e8ff;
+    top: -3px;
 }
 
 nav ul .right{

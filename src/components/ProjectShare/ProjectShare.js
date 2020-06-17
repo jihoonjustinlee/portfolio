@@ -12,7 +12,7 @@ function ProjectShare(props){
     return(
         <div className="project-share-container">
             <FontAwesomeIcon icon={faGithub} className="share-icon" onClick={()=>onClickHandler(props.github_url)}/>
-            {props.external_url == "" ? null : <FontAwesomeIcon icon={faExternalLinkAlt} className="share-icon" onClick={()=>onClickHandler(props.external_url)}/>}
+            {props.external_url === "" ? null : <FontAwesomeIcon icon={faExternalLinkAlt} className="share-icon" onClick={()=>onClickHandler(props.external_url)}/>}
             
         </div>
     )

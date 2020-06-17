@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Navbar.css'
 import Button from '../Button/Button'
 import logo from './logo.svg'
 import png from './portfolio.png'
+import Footer from '../Footer/Footer'
+import { CSSTransition } from 'react-transition-group'
 
 class Navbar extends React.Component{
     constructor(props){
@@ -10,7 +12,8 @@ class Navbar extends React.Component{
         this.state = {
             isMobile: false,
             mobileNavShown: false,
-            lastScrollPos: 0
+            lastScrollPos: 0,
+            mounted: false
         }
     }
 
@@ -74,6 +77,9 @@ class Navbar extends React.Component{
     }
 
     componentDidMount(){
+        this.setState({
+            mounted: true
+        })
         this.toggleNavType()
         window.addEventListener('resize', () => this.toggleNavType())
         window.addEventListener('scroll', () => this.changeNavStyle())
@@ -84,7 +90,7 @@ class Navbar extends React.Component{
             <nav id="navbar">
                 <ul>
                     <div className="left">
-                        <img src={logo} className="logo" onClick={() => this.scrollTo('home')}/>
+                        <img src={logo} alt="justin's website logo" className="logo" onClick={() => this.scrollTo('home')}/>
                     </div>
                     <div className="right">
                         { this.state.isMobile ? <div className={`navbar-mobile-toggle-button${this.state.mobileNavShown ? ' opened' : ''}`} onClick={() => this.toggleMobileNav()}>
@@ -92,14 +98,26 @@ class Navbar extends React.Component{
                             <div className="toggle-button-bar middle"></div>
                             <div className="toggle-button-bar bottom"></div>
                         </div> : <div className="navbar-desktop">
-                            <li onClick={() => this.scrollTo('about')}>01. About Me</li>
-                            <li onClick={() => this.scrollTo('work')}>02. Experience</li>
-                            <li onClick={() => this.scrollTo('project')}>03. Project</li>
-                            <li onClick={() => this.scrollTo('contact')}>04. Contact</li>
-                            <Button text="Resume" a_href={png}></Button>
+                            <CSSTransition className="navbar-desktop-option" timeout={700} in={this.state.mounted}>
+                                <li onClick={() => this.scrollTo('about')}>01. About Me</li>
+                            </CSSTransition>    
+                            <CSSTransition className="navbar-desktop-option" timeout={800} in={this.state.mounted}>
+                                <li onClick={() => this.scrollTo('work')}>02. Experience</li>
+                            </CSSTransition>
+                            <CSSTransition className="navbar-desktop-option" timeout={900} in={this.state.mounted}>
+                                <li onClick={() => this.scrollTo('project')}>03. Project</li>
+                            </CSSTransition>
+                            <CSSTransition className="navbar-desktop-option" timeout={1000} in={this.state.mounted}>
+                                <li onClick={() => this.scrollTo('contact')}>04. Contact</li>
+                            </CSSTransition>
+                            <CSSTransition timeout={1100} in={this.state.mounted}>
+                                <Button text="Resume" a_href={png}></Button>
+                            </CSSTransition>
                         </div>}
                     </div>
                 </ul>
+
+            
                 { this.state.isMobile && this.state.mobileNavShown ? 
                     <div className="navbar-mobile">
                         <div className="navbar-mobile-container">
@@ -108,56 +126,14 @@ class Navbar extends React.Component{
                                 <div className="option" onClick={() => this.scrollTo('work')}>02. Experience</div>
                                 <div className="option" onClick={() => this.scrollTo('project')}>03. Project</div>
                                 <div className="option" onClick={() => this.scrollTo('contact')}>04. Contact</div>
+                                <Button text="Resume" a_href={png}></Button>
                             </div>
+                            <Footer></Footer>
                         </div>
                     </div> : null}
             </nav>
         )
     }
 }
-
-
-// let lastScrollPos = 0
-
-// window.addEventListener('scroll', function(){
-//     const navBar = document.getElementById('navbar')
-//     if (lastScrollPos > window.scrollY){
-//         navBar.style.top = '0'
-//         if (window.scrollY > 0){
-//             navBar.style.boxShadow = "0px 5px 10px 1px #0000007a"
-//         } else{
-//             navBar.style.boxShadow = 'initial'
-//         }
-//     } else{
-//         if (window.scrollY > 50){
-//             navBar.style.top = '-100px'
-//         }
-//     }
-//     lastScrollPos = window.scrollY
-// })
-
-// function scrollTo(element){
-//     const e = document.getElementById(element)
-//     e.scrollIntoView()
-// }
-
-// function Navbar(props){
-//     return(
-//         <nav id="navbar">
-//             <ul>
-//                 <div className="left">
-//                     <img src={logo} className="logo" onClick={() => scrollTo('home')}/>
-//                 </div>
-//                 <div className="right">
-//                     <li onClick={() => scrollTo('about')}>01. About Me</li>
-//                     <li onClick={() => scrollTo('work')}>02. Experience</li>
-//                     <li onClick={() => scrollTo('project')}>03. Project</li>
-//                     <li onClick={() => scrollTo('contact')}>04. Contact</li>
-//                     <Button text="Resume" a_href={png}></Button>
-//                 </div>
-//             </ul>
-//         </nav>
-//     )
-// }
 
 export default Navbar

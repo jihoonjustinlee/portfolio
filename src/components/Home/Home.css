@@ -2,19 +2,67 @@
     font-family: FiraCode;
     color: #5984c8;
     margin: 0;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.firacode.enter-done{
+    top: 0;
+    opacity: 1;
 }
 
 .headline-primary{
     margin: 0;
     color: #d9e8ff;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.headline-primary.enter-done{
+    top: 0;
+    opacity: 1;
 }
 
 .headline-secondary{
     color: #9cafcc;
     margin: 0;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.headline-secondary.enter-done{
+    top: 0;
+    opacity: 1;
 }
 
 #home .box .description{
     margin-bottom: 2em;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+#home .box .description.enter-done{
+    top: 0;
+    opacity: 1;
+}
+
+#home .box .button{
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+#home .box .button.enter-done{
+    top: 0;
+    opacity: 1;
 }
 

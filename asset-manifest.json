@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.6e5d7d88.chunk.css",
+    "main.js": "/Portfolio/static/js/main.cd305035.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.cd305035.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.db605a1d.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.db605a1d.js.map",
+    "static/js/2.f1f0e63e.chunk.js": "/Portfolio/static/js/2.f1f0e63e.chunk.js",
+    "static/js/2.f1f0e63e.chunk.js.map": "/Portfolio/static/js/2.f1f0e63e.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.a4e369415741f92496b0c462b000bf31.js": "/Portfolio/precache-manifest.a4e369415741f92496b0c462b000bf31.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.6e5d7d88.chunk.css.map": "/Portfolio/static/css/main.6e5d7d88.chunk.css.map",
+    "static/js/2.f1f0e63e.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f1f0e63e.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Portfolio/static/media/Quicksand.f9baef8a.ttf",
+    "static/media/JustinLee_Resume.pdf": "/Portfolio/static/media/JustinLee_Resume.11a747c1.pdf",
+    "static/media/bubble_split.png": "/Portfolio/static/media/bubble_split.4631004d.png",
+    "static/media/docky.png": "/Portfolio/static/media/docky.b9b60247.png",
+    "static/media/logo.svg": "/Portfolio/static/media/logo.c66fec43.svg",
+    "static/media/portfolio.png": "/Portfolio/static/media/portfolio.14923530.png",
+    "static/media/self_portrait.jpg": "/Portfolio/static/media/self_portrait.9268837c.jpg",
+    "static/media/sorting_visualizer.png": "/Portfolio/static/media/sorting_visualizer.fcd1999e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db605a1d.js",
+    "static/js/2.f1f0e63e.chunk.js",
+    "static/css/main.6e5d7d88.chunk.css",
+    "static/js/main.cd305035.chunk.js"
+  ]
+}

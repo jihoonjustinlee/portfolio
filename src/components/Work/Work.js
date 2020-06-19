@@ -55,7 +55,7 @@ class Work extends React.Component{
                     'place': 'Natural Resources Canada',
                     'date': 'Sep 2015 - Dec 2015',
                     'duties': [
-                        "Created Window's tablet application that automated the conducting safety inspections of the deparment's building",
+                        "Created Windows tablet application that automated the conducting safety inspections of the department's building",
                         'Maintained and fixed bugs of a mobile application'
                     ],
                     'tools':[

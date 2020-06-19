@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import Button from '../Button/Button'
 import logo from './logo.svg'
-import png from './portfolio.png'
+import Resume from './JustinLee_Resume.pdf'
 import Footer from '../Footer/Footer'
 import { CSSTransition } from 'react-transition-group'
 
@@ -122,7 +122,7 @@ class Navbar extends React.Component{
                                 <li onClick={() => this.scrollTo('contact')}>04. Contact</li>
                             </CSSTransition>
                             <CSSTransition timeout={1100} in={this.state.mounted}>
-                                <Button text="Resume" a_href={png}></Button>
+                                <Button text="Resume" a_href={Resume}></Button>
                             </CSSTransition>
                         </div>}
                     </div>
@@ -135,7 +135,7 @@ class Navbar extends React.Component{
                                 <div className="option" onClick={() => this.scrollTo('work')}>02. Experience</div>
                                 <div className="option" onClick={() => this.scrollTo('project')}>03. Project</div>
                                 <div className="option" onClick={() => this.scrollTo('contact')}>04. Contact</div>
-                                <Button text="Resume" a_href={png}></Button>
+                                <Button text="Resume" a_href={Resume}></Button>
                             </div>
                             <Footer></Footer>
                         </div>

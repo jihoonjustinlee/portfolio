@@ -1,1 +1,1 @@
-https://jihoonjustinlee.github.io/Portfolio/
+jihoonjustinlee.com

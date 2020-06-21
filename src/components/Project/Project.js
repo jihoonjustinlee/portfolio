@@ -45,7 +45,7 @@ class Project extends React.Component{
                     'alt':"preview image of justin's portfolio website",
                     'desc': 'This is my personal portfolio website. Currently what you are viewing.',
                     'github_url': 'https://github.com/jihoonjustinlee/Portfolio',
-                    'external_url': 'todo',
+                    'external_url': 'https://jihoonjustinlee.com',
                     'tools': [
                         'React.js',
                         'Node.js'

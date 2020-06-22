@@ -4,6 +4,7 @@ import Headline from '../Headline/Headline'
 import self_portrait from './self_portrait.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function onClickHandler(url){
     window.open(url)
@@ -35,6 +36,8 @@ function About(){
                         </div>
                     </div>
                     <div className="portrait" onClick={()=>onClickHandler('https://github.com/jihoonjustinlee')}>
+                        <div className="tape-triangle"></div>
+                        <FontAwesomeIcon icon={faGithub} className="github"/>
                         <img src={self_portrait} alt="portrait of justin"/>
                     </div>
                     {/* <img className="portrait" src={self_portrait} alt="portrait of justin" onClick={()=>onClickHandler('https://github.com/jihoonjustinlee')}/> */}

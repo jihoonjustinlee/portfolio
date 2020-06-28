@@ -19,7 +19,7 @@ function About(){
                     <div className="description">
                         <p style={{'marginTop': '0'}}>Hi there! I am Justin, a software engineer based in New Brunswick, Canada who enjoys creating user-friendly websites that are pixel perfect and visually fun to look at.</p>
                         <p>After graduating from <span className="highlight">University of New Brunswick</span> in 2019, I decided to join the development team at <span className="highlight">University of Frederiction</span>, working on different tasks on a daily basis but primarily focusing on creating web-based MBA courses.</p>
-                        <p>As a junior engineer, I am still learning new things everyday, focusing on having as much exposures to modern technologies that are used in building full stack websites as well as mobile applications.</p>
+                        <p>As an intermediate software engineer, I am still learning new things everyday, focusing on having as much exposures to modern technologies that are used in building full stack websites as well as mobile applications.</p>
                         <p>Here are some of the technologies that I've used recently.</p>
                         <div className="tech-grid">
                             <div><FontAwesomeIcon icon={faAngleRight} className="arrow"/>Python</div>
